@@ -1,4 +1,4 @@
-package DZ2_2_v1;
+package Lesson2_dz2;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main {
 
         for (int i = 0; i < stringArray.length; ++i) {
             try {
-                System.out.println(sumArray.setSumArray(4, stringArray[i]));
+                System.out.printf("Сумма элементов массива: %d%n",sumArray.setSumArray(4, stringArray[i]));
             } catch (MyArraySizeException ex) {
                 System.err.println(ex.getMessage());
             } catch (MyArrayDataException ex) {
